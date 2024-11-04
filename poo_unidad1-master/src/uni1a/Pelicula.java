@@ -8,12 +8,12 @@ import java.util.*;
 // Subclase Pelicula que extiende de ContenidoAudiovisual
 public class Pelicula extends ContenidoAudiovisual {
     private String estudio;
-    private List<Actor>actores;// Asociacion de la clase Actor con Pelicula
+    private List<Actor>actores = new ArrayList<>();
 
     public Pelicula(String titulo, int duracionEnMinutos, String genero, String estudio) {
         super(titulo, duracionEnMinutos, genero);
         this.estudio = estudio;
-        this.actores = new ArrayList<>();//lista de actores
+        //this.actores = new ArrayList<>();//lista de actores
     }
 
     public String getEstudio() {
@@ -24,9 +24,6 @@ public class Pelicula extends ContenidoAudiovisual {
         this.estudio = estudio;
     }
     
-    public List<Actor> getActores() {
-		return actores;
-	}
 
 	public void agregar_Autor(Actor actor) {
 		actores.add(actor);
