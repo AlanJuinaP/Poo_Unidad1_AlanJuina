@@ -28,8 +28,8 @@ public class Pelicula extends ContenidoAudiovisual {
 		return actores;
 	}
 
-	public void setActores(List<Actor> actores) {
-		this.actores = actores;
+	public void agregar_Autor(Actor actor) {
+		actores.add(actor);
 	}
 
 	@Override
