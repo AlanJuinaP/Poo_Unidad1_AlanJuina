@@ -18,7 +18,7 @@ public class PruebaAudioVisual {
         avatar.agregarAutor(new Actor("Zoe Saldaña", 46));
 
         got.agregarTemporada(new Temporada(1, 10)); // Añadir temporadas como ejemplo
-        got.agregarTemporada(new Temporada(2, 10));
+        got.agregarTemporada(new Temporada(2, 10)); // Añadir temporadas como ejemplo
 
         cosmos.Agregar_Invest(new Investigador("Marie Curie", "Científica"));
         cosmos.Agregar_Invest(new Investigador("Charles Darwin", "Biología"));

@@ -15,13 +15,6 @@ public class Documental extends ContenidoAudiovisual {
        // this.investigadors = new ArrayList<>();
     }
     
-    public String getTema() {
-        return tema;
-    }
-    
-    public void setTema(String tema) {
-    	this.tema = tema;
-    }
     //añadimos un nuevo metodo para agregar un investigador
     //al documental
     public void Agregar_Invest(Investigador investigador) {
@@ -34,10 +27,10 @@ public class Documental extends ContenidoAudiovisual {
         System.out.println("Título: " + getTitulo());
         System.out.println("Duración en minutos: " + getDuracionEnMinutos());
         System.out.println("Género: " + getGenero());
-        System.out.println("Tema: " + this.tema);
-        System.out.println("Investigadores: ");
-        for(Investigador investigador : investigadors) {
-        	System.out.println(" - " + investigador.getNom_Inves() + ", Especialidad: " + investigador.getEspecialidad());
+        System.out.println("Tema: " + tema);
+        System.out.println("Investigadores:");
+        for (Investigador investigador : investigadors) {
+            System.out.println(" - " + investigador.getNom_Inves() + ", Especialidad: " + investigador.getEspecialidad());
         }
         System.out.println();
     }

@@ -8,6 +8,7 @@ public class Actor {
 		this.nom = nom;
 		this.edad = edad;
 	}
+	
 	public String getNom() {
 		return nom;
 	}

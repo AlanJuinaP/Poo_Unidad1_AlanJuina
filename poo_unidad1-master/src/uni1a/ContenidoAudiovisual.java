@@ -1,14 +1,17 @@
 package uni1a;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
+
 public abstract class ContenidoAudiovisual {
-    private static int contar = 0;
+	private static final AtomicInteger idGenerator = new AtomicInteger();
+    private final int id;
     private String titulo;
     private int duracionEnMinutos;
     private String genero;
-    private int id;
 
     public ContenidoAudiovisual(String titulo, int duracionEnMinutos, String genero) {
-        this.id = contar++;
+    	this.id = idGenerator.incrementAndGet();
         this.titulo = titulo;
         this.duracionEnMinutos = duracionEnMinutos;
         this.genero = genero;
